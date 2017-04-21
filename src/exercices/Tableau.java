@@ -9,6 +9,7 @@ package exercices;
 /**
  *
  * @author formation
+ * Exercise sur tableau à deux dimmensions 
  */
 public class Tableau {
 
