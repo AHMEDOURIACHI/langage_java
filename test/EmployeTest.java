@@ -1,0 +1,41 @@
+/*
+ * To change this license header, choose License Headers in Project Properties.
+ * To change this template file, choose Tools | Templates
+ * and open the template in the editor.
+ */
+
+import exercices.Objet.Employe;
+import exercices.Objet.Responsable;
+import org.junit.Test;
+import static org.junit.Assert.*;
+
+/**
+ *
+ * @author formation
+ */
+public class EmployeTest {
+    @Test
+    public void EmployeTest() {
+        
+        
+        
+        
+        
+  Responsable res =new Responsable();
+        res.setNom("Ahmed");
+        res.setPrenom("OURIACHI");
+        res.setSalaire(5000);
+        
+       
+        
+        
+       
+       
+       System.out.print(res);
+    }
+
+  
+  
+  
+  
+}
