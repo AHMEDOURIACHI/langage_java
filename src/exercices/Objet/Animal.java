@@ -9,20 +9,16 @@ package exercices.Objet;
  *
  * @author formation
  */
-public class Animal {
-    
+abstract public class Animal {
+
     private String nom;
     private int nbrPates;
     private String genre;
-    
-    
-    
-        public void afficher(){
-        
-        
-   System.out.println("le renard "+this.nom+" a "+this.nbrPates+" il est du genre "+this.genre);
- 
-         
+
+    public void afficher() {
+
+        System.out.println("le renard " + this.nom + " a " + this.nbrPates + " il est du genre " + this.genre);
+
     }
 
     public String getNom() {
@@ -48,12 +44,5 @@ public class Animal {
     public void setGenre(String genre) {
         this.genre = genre;
     }
-    
-    
-    
-    
-    
-    
-   
-    
+
 }

@@ -13,13 +13,14 @@ import java.util.HashSet;
  */
 public class Responsable  extends Employe {
     
-    private HashSet employes = new HashSet();
+    protected HashSet<Employe> employes = new HashSet<>();
 
     @Override
     public String toString() {
         
-        return "Responsable{"  + super.toString()+ employes+ '}';
-       // return "Responsable{" + "hs=" + hs + '}';
+        return String.format("responsable: %s Liste des employés :%s",super.toString(),this.employes );
+                //"Responsable{"  + super.toString()+ employes+ '}';
+                // return "Responsable{" + "hs=" + hs + '}';
     }
     
     
@@ -30,6 +31,10 @@ public class Responsable  extends Employe {
 
     public void setEmployes(HashSet employes) {
         this.employes = employes;
+    }
+
+    public void setSalaire(int i) {
+        throw new UnsupportedOperationException("Not supported yet.");
     }
     
     

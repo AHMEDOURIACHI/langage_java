@@ -3,16 +3,21 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package exercices.Objet;
+package exercices.animaux;
 
 /**
  *
  * @author formation
  */
-public class Personne {
+abstract public class Animal {
     
     protected String nom;
-    protected String prenom;
+    protected int x=0;
+    protected int y=0;
+    
+    
+    abstract public void bouger();
+    abstract public void manger();
 
     public String getNom() {
         return nom;
@@ -22,20 +27,22 @@ public class Personne {
         this.nom = nom;
     }
 
-    public String getPrenom() {
-        return prenom;
+    public int getX() {
+        return x;
     }
 
-    public void setPrenom(String prenom) {
-        this.prenom = prenom;
+    public void setX(int x) {
+        this.x = x;
     }
 
-    @Override
-    public String toString() {
-        return "Personne{" + "nom=" + nom + ", prenom=" + prenom + '}';
+    public int getY() {
+        return y;
     }
-    
-    
+
+    public void setY(int y) {
+        this.y = y;
+    }
+        
     
     
 }

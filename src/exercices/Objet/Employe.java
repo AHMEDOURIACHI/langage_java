@@ -11,15 +11,35 @@ package exercices.Objet;
  */
 public class Employe extends Personne {
     
-    private double salaire;
+    protected double salaire;
+    
+    
+    public Employe(){
+        
+    }
+    
+    
+    
+    public Employe( String nom,String prenom,Double salaire){
+        
+        this.nom=nom;
+        this.prenom=prenom;
+        this.salaire=salaire;
+        
+     
+    }
 
+    
     @Override
     public String toString() {
         return "Employe{"  + super.toString() +" Salaire "+ this.salaire + '}';
     }
+   
     
     
-
+    
+    
+/*
     public double getSalaire() {
         return salaire;
     }
@@ -28,5 +48,5 @@ public class Employe extends Personne {
         this.salaire = salaire;
     }
     
-    
+   */ 
 }
