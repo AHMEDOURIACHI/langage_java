@@ -18,12 +18,12 @@ public class AnimalTest {
     @Test
     public void  testConstructeur() {
         
-        Animal renard =new Animal();
+        Animal renard =new Animal() {};
         renard.setNom("MACRON");
         renard.setNbrPates(4);
         renard.setGenre("EM");
         
-        Animal corbeau=new Animal();
+        Animal corbeau=new Animal() {};
         corbeau.setNom("LEPEN");
         corbeau.setNbrPates(2);
         corbeau.setGenre("FN");
